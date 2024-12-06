@@ -32,6 +32,21 @@ The areas grid should be in the main content area of the page, and left aligned.
 
 The names of all current park guests should be listed in the main content area of the page, and right aligned.
 
+<!-- 
+Evelin Schneider
+Keira Booker
+Keira Goodwin
+Averi Adams
+Vanessa Gamble
+Krista Todd
+Ariana Barton
+Leyla Lane
+Esperanza Bartlett
+Ayaan Wiley
+Karissa Foley
+Brendan Clements 
+-->
+
 ## Wireframes
 
 Given these requirements by the park administrator, use your wireframing tool to make a low fidelity layout of the project.
