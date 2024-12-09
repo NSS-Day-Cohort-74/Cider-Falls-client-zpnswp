@@ -13,12 +13,12 @@ const database = {
         { id: 10, name: "Sophia Lee", parkAreaId: 1 }
     ],
     parkAreas: [
-        { id: 1, name: "Lodge", img: "../images/thelodge.png" },
-        { id: 2, name: "Lost Wolf Hiking Trail", img: "../images/lostwolftrail.png" },
-        { id: 3, name: "Chamfort River", img: "../images/chamfortriver.png" },
-        { id: 4, name: "Gander River", img: "../images/ganderriver.png" },
-        { id: 5, name: "Campground", img: "../images/campground.png" },
-        { id: 6, name: "Pine Bluffs Trails", img: "../images/pinebluffs.png" },
+        { id: 1, name: "Lodge", img: "../images/thelodge.png", color: "#c6b198" },
+        { id: 2, name: "Lost Wolf Hiking Trail", img: "../images/lostwolftrail.png", color: "#959478" },
+        { id: 3, name: "Chamfort River", img: "../images/chamfortriver.png", color: "#d3ccbs9" },
+        { id: 4, name: "Gander River", img: "../images/ganderriver.png", color: "#d3d1c9" },
+        { id: 5, name: "Campground", img: "../images/campground.png", color: "#d6c8a7" },
+        { id: 6, name: "Pine Bluffs Trails", img: "../images/pinebluffs.png", color: "#fffcee" },
     ],
     services: [
         { id: 1, name: "Hiking" },

@@ -6,12 +6,12 @@ body {
     background-image: url("https://as2.ftcdn.net/v2/jpg/05/75/71/45/1000_F_575714526_zdWnQBEP8G8L1u3E84oOryO3T4L2LK5L.jpg");
     background-color: black;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-        'header header header'
-        'services services services'
-        'main-container main-container right-sidebar-flexbox'
-        'footer footer footer';
+        'header header header header'
+        'services services services services'
+        'main-container main-container main-container right-sidebar-flexbox'
+        'footer footer footer footer';
 }
 
 .guest-title {
@@ -20,10 +20,10 @@ body {
 
 .header {
     margin-top: 13%;
-    padding: 20px;
+    padding: 10px;
     grid-area: header;
     text-align: center;
-    background: rgba(245, 245, 245, 0.323);
+    background: rgba(194, 179, 147, 0.323);
     border: 1px solid black
 }
 
@@ -38,6 +38,15 @@ body {
     margin-left: 1em;
 
 }
+
+.guest-sidebar {
+    justify-content: center;
+}
+
+.guest-sidebar>ul {
+    list-style: none;
+}
+
 
 .park-area-card {
     flex-basis: 25%;
@@ -59,17 +68,24 @@ body {
     padding-left: 1rem;
     background-color: #333333;
     color: #fcfaf9;
-
-
 }
 
 #services-message {
     display: flex;
     flex-wrap: wrap;
     grid-area: services;
-    background-color: yellowgreen;
+    background-color: #3f3f3f;
     padding: 10px;
     text-size-adjust: .75rem;
+    color: wheat;
+}
+
+.services:hover {
+    color: yellow;
+}
+
+h3:hover {
+    color: rgb(255, 4, 0);
 }
 
 .footer {
@@ -82,8 +98,12 @@ body {
 }
 
 img {
-    max-width: 60px;
+    max-width: 80px;
     display: block;
     margin: auto;
     padding-bottom: 4px;
+}
+
+.header>img {
+    max-width: 120px;
 }
