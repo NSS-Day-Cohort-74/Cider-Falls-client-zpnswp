@@ -1,0 +1,64 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        'header header header'
+        'services services services'
+        'main-container main-container right-sidebar-flexbox'
+        'footer footer footer';
+}
+
+.guest-title {
+    text-align: center;
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+    background: whitesmoke;
+    border: 1px solid black
+}
+
+#main-container {
+    grid-area: main-container;
+}
+
+.park-areas {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.park-area-card {
+    flex-basis: 22%;
+    padding: 20px;
+    border: 1px dotted black;
+    border-radius: 2em;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: auto;
+}
+
+.right-sidebar-flexbox {
+    grid-area: right-sidebar-flexbox;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 1rem;
+
+}
+
+#services-message {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: services;
+    margin-bottom: 5px;
+}
+
+.footer {
+    grid-area: footer;
+    font-size: 10px;
+    font-style: none;
+    text-align: center;
+    background: whitesmoke;
+}

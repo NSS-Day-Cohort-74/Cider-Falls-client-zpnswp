@@ -28,10 +28,11 @@ document.addEventListener(
 
 
 export const areasList = () =>{
-    let areaHTML ="<section>"
+    let areaHTML ="<section class='park-areas'>"
 
     for (const area of areas) {
-        areaHTML +=`<article    data-type="area"
+        areaHTML +=`<article    class="park-area-card"
+                                data-type="area"
                                 data-id="${area.id}">
                                 ${area.name}</article>` 
     }

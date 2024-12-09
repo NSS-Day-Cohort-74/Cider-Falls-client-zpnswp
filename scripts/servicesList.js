@@ -50,16 +50,21 @@ document.addEventListener(
 // // HTML SECTIOn
 // EXPORT HTML Function
 export const serviceList = () => {
-    let serviceHTML = "Park Services:"
-    //iterate through servises database for each service
-    for (const service of services) {
-        //generate an html element
-        //store state in html element
-        serviceHTML += `<div class="services" data-type="service" data-pkid="${service.id}" data-name="${service.name}">
-        ${service.name}
-        </div>`
+    let serviceHTML = "Park Services:&nbsp"
+    //iterate through services database for each service
+    // for (const service of services) {
+    //     //generate an html element
+    //     //store state in html element
+    //     serviceHTML += `<div class="services" data-type="service" data-pkid="${service.id}" data-name="${service.name}">
+    //     ${service.name},&nbsp
+    //     </div>`
 
-    }
+    // }
+    // same as above, but using .map() and .join() to remove trailing comma
+    serviceHTML += services.map(service => `<div class="services" data-type="service" data-pkid="${service.id}" data-name="${service.name}">
+        ${service.name}
+        </div>`).join(",&nbsp")
+    
     return serviceHTML
 }
 
