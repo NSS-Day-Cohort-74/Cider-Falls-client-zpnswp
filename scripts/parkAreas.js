@@ -1,6 +1,6 @@
 // import ParkAreas
 // Import Guests
-import { getAreas,getGuests } from "./database.js";
+import { getAreas, getGuests } from "./database.js";
 
 const guests = getGuests()
 const areas = getAreas()
@@ -17,7 +17,7 @@ document.addEventListener(
         let guestCount = 0
         if (areaClicked.dataset.type === "area") {
             for (const guest of guests) {
-                if ( guest.parkAreaId === id ){
+                if (guest.parkAreaId === id) {
                     guestCount++
                 }
             }
@@ -27,14 +27,16 @@ document.addEventListener(
 )
 
 
-export const areasList = () =>{
-    let areaHTML ="<section class='park-areas'>"
+export const areasList = () => {
+    let areaHTML = "<section class='park-areas'>"
 
     for (const area of areas) {
-        areaHTML +=`<article    class="park-area-card"
+        areaHTML += `<article    class="park-area-card"
                                 data-type="area"
                                 data-id="${area.id}">
-                                ${area.name}</article>` 
+                                <img src="${area.img}">
+                                ${area.name}
+                                </article>`
     }
     areaHTML += "</section>"
 
