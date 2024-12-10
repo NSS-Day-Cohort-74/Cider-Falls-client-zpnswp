@@ -1,5 +1,5 @@
 // database
-const database = {
+export const database = {
     guests: [
         { id: 1, name: "John Smith", parkAreaId: 3 },
         { id: 2, name: "Emily Johnson", parkAreaId: 6 },

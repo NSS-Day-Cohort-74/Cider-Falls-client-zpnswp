@@ -2,10 +2,6 @@
 // Import Guests
 import { getAreas, getGuests, getParkAreaServices, getServices } from "./database.js";
 
-const guests = getGuests()
-const areas = getAreas()
-const services = getServices()
-const parkAreaServices = getParkAreaServices()
 
 
 // CLICK EVENT SECTION
@@ -14,6 +10,7 @@ const parkAreaServices = getParkAreaServices()
 document.addEventListener(
     "click",
     (clickEvent) => {
+        const guests = getGuests()
         const areaClicked = clickEvent.target
         const id = parseInt(areaClicked.dataset.id)
         let guestCount = 0
@@ -32,6 +29,9 @@ document.addEventListener(
 
 
 export const areasList = () => {
+    const areas = getAreas()
+    const services = getServices()
+    const parkAreaServices = getParkAreaServices()
     let areaHTML = "<section class='park-areas'>"
 
     for (const area of areas) {
