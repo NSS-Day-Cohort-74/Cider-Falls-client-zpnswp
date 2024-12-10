@@ -26,9 +26,11 @@ document.addEventListener(
             for (const guest of database.guests) {
                 if (guest.id === parseInt(guestDropDownValue)) {
                     guest.parkAreaId = parseInt(areaDropDownValue)
-                    window.alert(`${guest.name} is now at location # ${guest.parkAreaId}`)
+                    // window.alert(`${guest.name} is now at location # ${guest.parkAreaId}`)
                 }
             }
+
+            // reload and reassign DOM elements after changes to database
             const guestElement = document.querySelector(".guest-sidebar")
             const mainElement = document.querySelector("#main-container")
 
