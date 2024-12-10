@@ -1,5 +1,5 @@
 // database
-const database = {
+export const database = {
     guests: [
         { id: 1, name: "John Smith", parkAreaId: 3 },
         { id: 2, name: "Emily Johnson", parkAreaId: 6 },
@@ -56,7 +56,10 @@ const database = {
         { id: 16, parkAreaId: 6, serviceId: 9 },
         { id: 17, parkAreaId: 6, serviceId: 1 },
         { id: 18, parkAreaId: 6, serviceId: 8 },
-        { id: 19, parkAreaId: 6, serviceId: 10 }
+        { id: 19, parkAreaId: 6, serviceId: 10 },
+        { id: 20, parkAreaId: 5, serviceId: 13 },
+        { id: 21, parkAreaId: 5, serviceId: 11 }
+
     ]
 }
 // get functions
