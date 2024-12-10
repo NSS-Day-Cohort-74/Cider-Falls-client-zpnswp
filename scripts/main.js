@@ -11,6 +11,5 @@ const parkAreasHTML = areasList()
 
 guestElement.innerHTML = guestHTML
 serviceListElement.innerHTML = serviceListHTML
-mainElement.innerHTML = parkAreasHTML
-
 serviceListElement.innerHTML += "."
+mainElement.innerHTML = parkAreasHTML
