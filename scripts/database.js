@@ -1,5 +1,5 @@
 // database
-const database = {
+export const database = {
     guests: [
         { id: 1, name: "John Smith", parkAreaId: 3 },
         { id: 2, name: "Emily Johnson", parkAreaId: 6 },
@@ -13,21 +13,21 @@ const database = {
         { id: 10, name: "Sophia Lee", parkAreaId: 1 }
     ],
     parkAreas: [
-        { id: 1, name: "Lodge" },
-        { id: 2, name: "Lost Wolf Hiking Trail" },
-        { id: 3, name: "Chamfort River" },
-        { id: 4, name: "Gander River" },
-        { id: 5, name: "Camp Ground" },
-        { id: 6, name: "Pine Bluffs Trails" },
+        { id: 1, name: "Lodge", img: "../images/thelodge.png", color: "#c6b198" },
+        { id: 2, name: "Lost Wolf Hiking Trail", img: "../images/lostwolftrail.png", color: "#959478" },
+        { id: 3, name: "Chamfort River", img: "../images/chamfortriver.png", color: "#d3ccbs9" },
+        { id: 4, name: "Gander River", img: "../images/ganderriver.png", color: "#d3d1c9" },
+        { id: 5, name: "Campground", img: "../images/campground.png", color: "#d6c8a7" },
+        { id: 6, name: "Pine Bluffs Trails", img: "../images/pinebluffs.png", color: "#fffcee" },
     ],
     services: [
         { id: 1, name: "Hiking" },
         { id: 2, name: "Rafting" },
         { id: 3, name: "Canoeing" },
-        { id: 4, name: "fishing" },
-        { id: 5, name: "parking" },
-        { id: 6, name: "lodging" },
-        { id: 8, name: "picnicking" },
+        { id: 4, name: "Fishing" },
+        { id: 5, name: "Parking" },
+        { id: 6, name: "Lodging" },
+        { id: 8, name: "Picnicking" },
         { id: 9, name: "Food Vendors" },
         { id: 10, name: "Zip Lines" },
         { id: 11, name: "Office" },
@@ -56,7 +56,10 @@ const database = {
         { id: 16, parkAreaId: 6, serviceId: 9 },
         { id: 17, parkAreaId: 6, serviceId: 1 },
         { id: 18, parkAreaId: 6, serviceId: 8 },
-        { id: 19, parkAreaId: 6, serviceId: 10 }
+        { id: 19, parkAreaId: 6, serviceId: 10 },
+        { id: 20, parkAreaId: 5, serviceId: 13 },
+        { id: 21, parkAreaId: 5, serviceId: 11 }
+
     ]
 }
 // get functions
