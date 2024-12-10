@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-image: url("https://as2.ftcdn.net/v2/jpg/05/75/71/45/1000_F_575714526_zdWnQBEP8G8L1u3E84oOryO3T4L2LK5L.jpg");
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        'header header header header'
+        'services services services services'
+        'main-container main-container main-container right-sidebar-flexbox'
+        'footer footer footer footer';
+}
+
+.guest-title {
+    text-align: center;
+}
+
+.header {
+    margin-top: 13%;
+    padding: 10px;
+    grid-area: header;
+    text-align: center;
+    background: rgba(194, 179, 147, 0.323);
+    border: 1px solid black
+}
+
+#main-container {
+    grid-area: main-container;
+    background-color: #333333;
+}
+
+.park-areas {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1em;
+
+}
+
+.guest-sidebar {
+    justify-content: center;
+}
+
+.guest-sidebar>ul {
+    list-style: none;
+}
+
+
+.park-area-card {
+    flex-basis: 25%;
+    padding: 20px;
+    border: 1px dotted black;
+    border-radius: 2em;
+    text-align: center;
+    /* place padding above/below and right/left */
+    margin: 1em auto 1em auto;
+    background-color: #f3d3bdb6;
+}
+
+.right-sidebar-flexbox {
+    grid-area: right-sidebar-flexbox;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 1em;
+    padding-left: 1rem;
+    background-color: #333333;
+    color: #fcfaf9;
+}
+
+#services-message {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: services;
+    background-color: #3f3f3f;
+    padding: 10px;
+    text-size-adjust: .75rem;
+    color: wheat;
+}
+
+.services:hover {
+    color: yellow;
+}
+
+h3:hover {
+    color: rgb(255, 4, 0);
+}
+
+.footer {
+    grid-area: footer;
+    font-size: 10px;
+    font-style: none;
+    text-align: center;
+    background: #fcfaf96e;
+    padding: 10px;
+}
+
+img {
+    max-width: 80px;
+    display: block;
+    margin: auto;
+    padding-bottom: 4px;
+}
+
+.header>img {
+    max-width: 120px;
+}
