@@ -52,7 +52,10 @@ document.addEventListener(
 // generate button
 
 export const generateGuestDropDown = () => {
-    let guestDropDownHTML = '<label> Select a guest </label>' + '<select name="Visitor_" id="guest-select">' + '<option>Guests</option>'
+    let guestDropDownHTML = '<label> Select a guest </label>' + 
+                            '<select name="Visitor_" id="guest-select">' + 
+                            '<option>Guests</option>'
+                            
     for (const guest of guests) {
         guestDropDownHTML += `<option value="${guest.id}">${guest.name}</option>`
     }
@@ -62,7 +65,9 @@ export const generateGuestDropDown = () => {
 }
 
 export const generateAreaDropDown = () => {
-    let areaDropDownHTML = '<label> Select an area </label>' + '<select name="Area" id="area-select">' + '<option> Areas </option>'
+    let areaDropDownHTML = '<label> Select an area </label>' + 
+                            '<select name="Area" id="area-select">' + 
+                            '<option> Areas </option>'
     for (const area of areas) {
         areaDropDownHTML += `<option value="${area.id}"> ${area.name} </option>`
     }

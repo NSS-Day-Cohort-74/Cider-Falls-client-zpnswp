@@ -35,6 +35,7 @@ export const database = {
         { id: 13, name: "Children Play Areas" },
         { id: 14, name: "Information" },
         { id: 15, name: "Rock Climbing" },
+        
 
     ],
     parkAreaServices: [
@@ -58,7 +59,8 @@ export const database = {
         { id: 18, parkAreaId: 6, serviceId: 8 },
         { id: 19, parkAreaId: 6, serviceId: 10 },
         { id: 20, parkAreaId: 5, serviceId: 13 },
-        { id: 21, parkAreaId: 5, serviceId: 11 }
+        { id: 21, parkAreaId: 5, serviceId: 11 },
+        { id: 22, parkAreaId: 5, serviceId: 12},
 
     ]
 }
